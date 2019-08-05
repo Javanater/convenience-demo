@@ -1,4 +1,4 @@
-#include "using_convenience.hpp"
+#include <using_convenience.hpp>
 
 int main()
 {
@@ -6,6 +6,9 @@ int main()
 
     for (auto e : path_iterator(".") | indexed())
         cout << "%02d"_f % e.index() << e.value() << endl;
+
+    RANGES_FOR(auto p, path_range("."))
+        cout << p << endl;
 
     vector<int> v;
     v += 3,5,9;

@@ -1,0 +1,3 @@
+[submodule "convenience"]
+	path = convenience
+	url = ssh://git@git.flabs.io:10022/rfortenberry/convenience.git
